@@ -1,7 +1,15 @@
-= Chapter 1
+=  Introduction 
 
-In this section, we cover... FIXME
+This training provides an introduction to flatpak and its usage in Red Hat Enterprise Linux (RHEL) 9 aided with a hands-on lab experience
 
+== Objectives
 
-- Add or remove section entries in the `antora.yaml` file as needed.
-- Ensure you create or delete the corresponding directory for the chapter accordingly.
+- Define Flatpak and the terminologies related to Flatpak.
+- Search, install and list Flatpak applications using Flatpak command and GNOME.
+- Configure unsupported upstream Flatpak sources.
+
+Duration = 30 min
+
+== Prerequisites
+
+- RHCSA or higher is helpful for the navigation and usage of the command line, but it is not required.

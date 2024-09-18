@@ -1,5 +1,5 @@
 name: application-management-flaptak
-title: FIXME Course Title
+title: "Red Hat Enterprise Linux: Desktop Application Management Using Flatpak"
 version: 1
 nav:
 - modules/ROOT/nav.adoc

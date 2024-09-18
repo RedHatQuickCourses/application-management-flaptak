@@ -1,6 +1,15 @@
-= Section 3
+= Flatpak terminology
 
-* Create multiple copies of this section as needed.
-* Remove any unnecessary sections or chapter pages.
-* Customize the section as appropriate.
-* Ensure that each page contains a manageable amount of content.
+- *Flatpak*: It is a system for building, distributing, and running sandboxed desktop applications on RHEL.
+
+- *Flatpak application*: These are the applications the user installs via the Flatpak command or via a different UI like GNOME Software.
+
+- *Runtime*: Alternatively referred to as platforms, these are integrated platforms to provide basic utilities needed for a Flatpak application to work.
+
+- *Flatpak bundle*: It is a specific single-file export format which contains a Flatpak app or runtime.
+
+- *Sandboxes*: With Flatpak, each application is built and run in an isolated environment, which is called the 'sandbox'. Each sandbox contains an application and its runtime.
+
+- *Portals*: Portals are a mechanism through which applications can interact with the host environment from within a sandbox.
+
+- *Repositories(Remotes)*: Flatpak applications and runtimes are typically stored and published using repositories, which behave similar to Git repositories.

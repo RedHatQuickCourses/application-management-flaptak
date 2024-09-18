@@ -1,5 +1,5 @@
 site:
-  title: FIXME Course Title
+  title: "Red Hat Enterprise Linux: Desktop Application Management Using Flatpak"
   start_page: application-management-flaptak::index.adoc
 
 content:
