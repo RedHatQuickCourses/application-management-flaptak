@@ -1,0 +1,13 @@
+= Update Flatpack applications
+
+. To update the application using the CLI run the following command.
+ 
+  $ flatpak update applicationid
+
+. By default, GSC automatically updates `Flatpak` packages overnight. If a `Flatpak` package has an update, it appears in GSC. You can click the refresh button in the upper left corner to force GSC to look for new packages.
++
+image::ch7.1.png[float=center]
+
+. You can change auto update behavior of GSC by clicking the collapsed menu button (hamburger button) in the upper right corner.
++
+image::ch7.2.png[float=center]

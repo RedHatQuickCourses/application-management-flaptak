@@ -1,0 +1,7 @@
+= Summary 
+
+- Flatpak provides a sandbox environment for application building, deployment, distribution and installation.
+
+- Flatpak protects the system against third-party applications as flatpak has minimum access to the host system.
+
+- Flatpak requires a graphical environment for installation and usage.
