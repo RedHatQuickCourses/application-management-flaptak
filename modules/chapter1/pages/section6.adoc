@@ -1,0 +1,14 @@
+= List and run Flatpak applications
+
+. List the installed Flatpak applications:
+  
+  $ flatpak list
+
+. Run the application by replacing the value of Application ID listed from the preceding output.
+ 
+ $ flatpak run application id
+ $ flatpak run org.libreoffice.LibreOffice
+
+.. The application launches as shown in the following screenshot.
++
+image::ch6.1.png[float=center]

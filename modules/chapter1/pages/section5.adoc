@@ -12,13 +12,14 @@ Flatpak management can be done either via the command line or the Gnome Software
 
 .. To install the Libreoffice application from `rhel` remote run the following command.
    
-    $ flatpak search LibreOffice
-    Application ID               Version  Branch  Remotes  Description
-    org.libreoffice.LibreOffice           stable  rhel     The LibreOffice productivity suite
-    $ flatpak install rhel org.libreoffice.LibreOffice
+ $ flatpak search LibreOffice
+   Application ID               Version  Branch  Remotes  Description
+   org.libreoffice.LibreOffice   stable   rhel    The LibreOffice productivity suite
+  
+ $ flatpak install rhel org.libreoffice.LibreOffice
 
 . Gnome Software Center(GSC) also shows the rpm and Flatpak versions of packages (if available).
 +
-image::ch5.1.png[]
+image::ch5.1.png[float=center]
 
 .. GSC defaults to the Red Hat flatpak remote, but you can manually change it.

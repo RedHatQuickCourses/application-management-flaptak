@@ -1,27 +1,18 @@
-= An Example Quick Course
+= Desktop Application Management using Flatpak
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
-
-Description:
-Course description FIXME
-
-Duration: FIXME hours
+This training provides an introduction to flatpak and its usage in Red Hat Enterprise Linux (RHEL) 9 aided with a hands-on lab experience
 
 == Objectives
 
-On completing this course, you should be able to:
+- Define Flatpak and the terminologies related to Flatpak.
+- Search, install and list Flatpak applications using Flatpak command and GNOME.
+- Configure unsupported upstream Flatpak sources.
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+Duration = 30 min
 
 == Prerequisites
 
-This course assumes that you have the following prior experience:
-
-* Course or experience...
-* Course or experience...
-* Course or experience...
+- RHCSA or higher is helpful for the navigation and usage of the command line, but it is not required.
