@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Introduction :: Red Hat Enterprise Linux: Desktop Application Management Using Flatpak</title>
-    <link rel="prev" href="../LABENV/index.html">
-    <link rel="next" href="section1.html">
+    <title>Adding Unsupported Repositories for Flatpak :: Red Hat Enterprise Linux: Desktop Application Management Using Flatpak</title>
+    <link rel="prev" href="section7.html">
+    <link rel="next" href="section9.html">
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
@@ -53,7 +53,7 @@
   </li>
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
     <a class="nav-link" href="index.html">Introduction</a>
 <ul class="nav-list">
@@ -78,7 +78,7 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="section7.html">Update Flatpack applications</a>
   </li>
-  <li class="nav-item" data-depth="2">
+  <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="section8.html">Adding Unsupported Repositories for Flatpak</a>
   </li>
   <li class="nav-item" data-depth="2">
@@ -128,6 +128,7 @@
   <ul>
     <li><a href="../index.html">Red Hat Enterprise Linux: Desktop Application Management Using Flatpak</a></li>
     <li><a href="index.html">Introduction</a></li>
+    <li><a href="section8.html">Adding Unsupported Repositories for Flatpak</a></li>
   </ul>
 </nav>
 </div>
@@ -136,35 +137,103 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Introduction</h1>
-<div id="preamble">
-<div class="sectionbody">
+<h1 class="page">Adding Unsupported Repositories for Flatpak</h1>
 <div class="paragraph">
-<p>This training provides an introduction to flatpak the goal is to Install and update software using Flatpak via the command line or via GNOME.</p>
+<p>Flatpak applications are distributed from repositories called remotes. Red Hat provides a remote with RHEL applications. Additionally, third-party remotes are available as well.</p>
+</div>
+<div class="paragraph">
+<p>You can add any Flatpak remote. The most popular upstream remote is Flathub.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Note: Red Hat does not support applications from third-party remotes.</pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Instructions for adding Flathub as a remote can be found at <a href="https://flatpak.org/setup/Red%20Hat%20Enterprise%20Linux" target="_blank" rel="noopener">flatpak.org</a></p>
 </div>
-<div class="sect1">
-<h2 id="_objectives"><a class="anchor" href="#_objectives"></a>Objectives</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>Define Flatpak and the terminologies related to Flatpak.</p>
+<p>Visit the link at <a href="https://flatpak.org/setup/Red%20Hat%20Enterprise%20Linux" target="_blank" rel="noopener">flatpak.org</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Click <strong>Flathub repository file</strong> to download the Flatpak repo file.</p>
+<div class="imageblock center">
+<div class="content">
+<img src="_images/ch8.1.png" alt="ch8.1">
+</div>
+</div>
+</li>
+</ol>
+</div>
 </li>
 <li>
-<p>Search, install and list Flatpak applications using Flatpak command and GNOME.</p>
+<p>In the prompt dialog, choose Open with and Click <strong>OK</strong>.</p>
+<div class="imageblock center">
+<div class="content">
+<img src="_images/ch8.2.png" alt="ch8.2">
+</div>
+</div>
 </li>
 <li>
-<p>Configure unsupported upstream Flatpak sources.</p>
+<p>The Flathub remote is visible. Click <strong>Install</strong>.</p>
+<div class="imageblock center">
+<div class="content">
+<img src="_images/ch8.3.png" alt="ch8.3">
+</div>
+</div>
 </li>
-</ul>
+<li>
+<p>On the main <code>Gnome Software Center</code> screen, click the hidden menu button (hamburger button) in the top right. You see the different Flatpak remotes listed.</p>
+<div class="imageblock center">
+<div class="content">
+<img src="_images/ch8.4.png" alt="ch8.4">
 </div>
 </div>
+</li>
+<li>
+<p>You can optionally install Flatseal. This application is useful for tweaking the permissions of the Flatpak sandbox.</p>
+<div class="imageblock center">
+<div class="content">
+<img src="_images/ch8.5.png" alt="ch8.5">
+</div>
+</div>
+</li>
+<li>
+<p>Running Flatseal allows you to tweak different permissions within the Flatpak sandbox per Flatpak. The following screenshot shows changing the permissions for the Inkscape application. You can test changing the permissions on any application you installed using Flatpak.</p>
+<div class="imageblock center">
+<div class="content">
+<img src="_images/ch8.6.png" alt="ch8.6">
+</div>
+</div>
+</li>
+<li>
+<p>The Flatseal application itself has a reset button in the upper right corner. Flatpak on the command line can also reset permissions per application.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>You can run <code>Flatpak permission-reset &lt;application ID&gt;</code> to do that.</p>
+<div class="literalblock">
+<div class="content">
+<pre>[student@workstation ~]$ flatpak list
+Name        Application ID                           Version      Branch           Origin       Installation
+Flatseal    com.github.tchx84.Flatseal               2.1.0        stable           flathub      system
+Inkscape    org.inkscape.Inkscape                    1.3          stable           flathub      system
+LibreOffice org.libreoffice.LibreOffice                           stable           rhel         system
+[student@workstation ~]$ flatpak permission-reset org.inkscape.Inkscape</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="../LABENV/index.html">Lab Environment</a></span>
-  <span class="next"><a href="section1.html">What is Flatpak ?</a></span>
+  <span class="prev"><a href="section7.html">Update Flatpack applications</a></span>
+  <span class="next"><a href="section9.html">Guided Exercise: Install an application using Flatpak</a></span>
 </nav>
 </article>
   </div>
