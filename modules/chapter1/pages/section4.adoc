@@ -1,0 +1,18 @@
+= Flatpak Installation
+
+Flatpak installation and all subsequent commands work only on the graphical target or the desktop environment. If you SSH into your machine without the X11 display the installation fails.
+
+. You install Flatpak by using the dnf install command.
+ 
+  $ sudo dnf install flatpak
+
+. Add the Red Hat supported Flatpak remote.
+ $ sudo flatpak remote-add --if-not-exists rhel https://flatpaks.redhat.io/rhel.flatpakrepo
+
+. Log in to the Red Hat container catalog using your own credentials.
+  
+  $ podman login registry.redhat.io
+    Username: your-user-name
+    Password: your-password
+
+.. If you do not have an existing credential to log in to `registry.redhat.io` then you can generate them by visiting https://access.redhat.com/terms-based-registry/[Registry Service Accounts^] and creating a new service account.

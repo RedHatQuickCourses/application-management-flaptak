@@ -1,6 +1,6 @@
 site:
   title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  start_page: application-management-flaptak::index.adoc
 
 content:
   sources:
